@@ -1,0 +1,1923 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Universali dokumen\u0173 teikimo s\u0105saja yra IS Infostatyba komponentas, kurio API yra paremtas REST principais. API kvietini\u0173 b\u016bsenos gr\u0105\u017einamos naudojant standartinius HTTP STATUS kodus, o standartinei informacijai perduoti naudojamos API atitinkamos HTTP antra\u0161t\u0117s.",
+        "version": "1.0",
+        "title": "Infostatyba \u2013 universali integracija"
+    },
+    "host": "statau.eptptest.lt",
+    "basePath": "/eInfostatyba-ws-app",
+    "tags": [
+        {
+            "name": "Dokumentai",
+            "description": "Common Document Controller"
+        },
+        {
+            "name": "Klasifikatoriai",
+            "description": "Common Classifier Controller"
+        }
+    ],
+    "paths": {
+        "/common/classifier/certificateRegister": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Sertifikat\u0173 klasifikatori\u0173 klasifikatorius",
+                "operationId": "getCertificateRegisterUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/constructionCategory": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Statinio kategorij\u0173 klasifikatorius",
+                "operationId": "getConstructionCategoryUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/constructionJobType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Vykdom\u0173 darb\u0173 r\u016b\u0161is klasifikatorius",
+                "operationId": "getConstructionJobTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/constructionOtherPlaceType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Teritorij\u0173 klasifikatorius",
+                "operationId": "getConstructionOtherPlaceTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/constructionPurpose": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Statinio paskir\u010di\u0173 klasifikatorius",
+                "operationId": "getConstructionPurposeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/constructionType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Statinio statybos r\u016b\u0161i\u0173 klasifikatorius",
+                "operationId": "getConstructionTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/documentCategory": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Dokument\u0173 kategorij\u0173 klasifikatorius",
+                "operationId": "getDocumentCategoryUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/documentState": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Dokumento b\u016bsen\u0173 klasifikatorius",
+                "operationId": "getDocumentStateUsingGET_1",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/documentType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Dokumento tip\u0173 klasifikatorius",
+                "operationId": "getDocumentTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/indicator": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Indikatori\u0173 klasifikatorius",
+                "operationId": "getIndicatorUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/noteType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "U\u017era\u0161\u0173 tip\u0173 klasifikatorius",
+                "operationId": "getNoteTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/participantStateType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Dalyvi\u0173 b\u016bsen\u0173 klasifikatorius",
+                "operationId": "getParticipantStateTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/participantType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Statybos dalyvi\u0173 tip\u0173 klasifikatorius",
+                "operationId": "getParticipantTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/personType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Asmen\u0173 tip\u0173  klasifikatorius",
+                "operationId": "getPersonTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/plotNoRegistrationType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "\u017dem\u0117s sklypo tip\u0173 klasifikatorius",
+                "operationId": "getPlotNoRegistrationTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/registrationType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Registrtacijos tip\u0173 klasifikatorius",
+                "operationId": "getRegistrationTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/roomActionType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Veiksmo su patalpomis tipas klasifikatorius",
+                "operationId": "getRoomActionTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/roomPurpose": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Patalp\u0173 paskirties klasifikatorius",
+                "operationId": "getRoomPurposeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/subjectType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Subjekt\u0173 tip\u0173 klasifikatorius",
+                "operationId": "getSubjectTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/classifier/valueType": {
+            "get": {
+                "tags": [
+                    "Klasifikatoriai"
+                ],
+                "summary": "Reik\u0161mi\u0173 klasifikatorius",
+                "operationId": "getValueTypeUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ClassifierDto"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/document": {
+            "get": {
+                "tags": [
+                    "Dokumentai"
+                ],
+                "summary": "Dokument\u0173 s\u0105ra\u0161as pagal paie\u0161kos kriterijus",
+                "operationId": "getDocumentsUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "parameters": [
+                    {
+                        "name": "cadastralNumber",
+                        "in": "query",
+                        "description": "Sklypo kadastro numeris",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "constCategory",
+                        "in": "query",
+                        "description": "Statinio kategorija. Klasifikatorius: /constructionCategory",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "constModernization",
+                        "in": "query",
+                        "description": "Statinio atnaujinimas (modernizavimas)",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "constPurpose",
+                        "in": "query",
+                        "description": "Statinio paskirtis. Klasifikatorius: /constructionPurpose",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "constType",
+                        "in": "query",
+                        "description": "Statinio statybos r\u016b\u0161is. Klasifikatorius: /constructionType",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "docRegDateFrom",
+                        "in": "query",
+                        "description": "Dokumento registracijos data nuo",
+                        "required": false,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    {
+                        "name": "docRegDateTo",
+                        "in": "query",
+                        "description": "Dokumento registracijos data iki",
+                        "required": false,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    {
+                        "name": "docRegNr",
+                        "in": "query",
+                        "description": "Dokumento registracijos numeris",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "docState",
+                        "in": "query",
+                        "description": "Dokumento b\u016bsena. Klasifikatorius: /documentState",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "docType",
+                        "in": "query",
+                        "description": "Dokumento tipas. Klasifikatorius: /documentType",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "orgCode",
+                        "in": "query",
+                        "description": "I\u0161davusios institucijos kodas",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "Puslapio numeris",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "Puslapio dydis. Did\u017eiausia galima reik\u0161m\u0117 50",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32",
+                        "x-example": 10
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/CommonDocumentPageDto"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        },
+        "/common/document/{id}": {
+            "get": {
+                "tags": [
+                    "Dokumentai"
+                ],
+                "summary": "Dokumentas pagal id",
+                "operationId": "getDocumentUsingGET",
+                "produces": [
+                    "*/*"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Dokumento id",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "97"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/CommonDocumentDto"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "deprecated": false
+            }
+        }
+    },
+    "securityDefinitions": {
+        "basicAuth": {
+            "type": "basic"
+        }
+    },
+    "definitions": {
+        "AddressDto": {
+            "type": "object",
+            "properties": {
+                "addressComponentId": {
+                    "type": "string",
+                    "description": "Adreso komponento identifikatorius"
+                },
+                "building": {
+                    "type": "string",
+                    "description": "Namo Nr."
+                },
+                "city": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Miesto pavadinimas"
+                },
+                "country": {
+                    "type": "string",
+                    "description": "\u0160alies pavadinimas"
+                },
+                "fullAddress": {
+                    "type": "string",
+                    "description": "Pilnas adresas"
+                },
+                "housing": {
+                    "type": "string",
+                    "description": "Korpuso Nr."
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "municipality": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Savivaldyb\u0117s pavadinimas"
+                },
+                "postalCode": {
+                    "type": "string",
+                    "description": "Pa\u0161to kodas"
+                },
+                "region": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Regiono pavadinimas"
+                },
+                "room": {
+                    "type": "string",
+                    "description": "Buto Nr."
+                },
+                "street": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Gatv\u0117s pavadinimas"
+                }
+            },
+            "title": "AddressDto"
+        },
+        "CertificateDto": {
+            "type": "object",
+            "properties": {
+                "certificateName": {
+                    "type": "string",
+                    "description": "Sertifikato/atestato/pa\u017eymos pavadinimas"
+                },
+                "certificateNr": {
+                    "type": "string",
+                    "description": "Sertifikato/atestato/pa\u017eymos numeris"
+                },
+                "certificateRegister": {
+                    "type": "string",
+                    "description": "Sertifikat\u0173 registro kodas"
+                },
+                "certificateText": {
+                    "type": "string",
+                    "description": "Sertifikato tekstas"
+                },
+                "certificateValid": {
+                    "type": "boolean"
+                },
+                "certificateValidFromDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Sertifikatas galioja nuo"
+                },
+                "certificateValidToDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Sertifikatas galioja iki"
+                }
+            },
+            "title": "CertificateDto"
+        },
+        "ClassifierDto": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "Kodas"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Reik\u0161m\u0117"
+                }
+            },
+            "title": "ClassifierDto"
+        },
+        "CommonDocumentDto": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "type": "string",
+                    "description": "Kategorija. Klasifikatorius: /documentCategory"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "issuer": {
+                    "description": "Dokument\u0105 i\u0161dav\u0119s subjektas",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "notes": {
+                    "type": "array",
+                    "description": "Pastabos",
+                    "items": {
+                        "$ref": "#/definitions/NoteDto"
+                    }
+                },
+                "owner": {
+                    "description": "Dokumento savininkas",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "parentId": {
+                    "type": "string",
+                    "description": "Naujausios versijos dokumentas"
+                },
+                "presenter": {
+                    "description": "Dokumento pateik\u0117jas",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "project": {
+                    "description": "Projektas",
+                    "$ref": "#/definitions/ProjectDto"
+                },
+                "receiver": {
+                    "description": "Dokument\u0105 gaunantis subjektas",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "registrationDate": {
+                    "type": "string",
+                    "description": "Registracijos data"
+                },
+                "registrationNr": {
+                    "type": "string",
+                    "description": "Registracijos numeris"
+                },
+                "secretInformation": {
+                    "type": "boolean",
+                    "description": "Slapta informacija"
+                },
+                "sender": {
+                    "description": "Dokument\u0105 i\u0161siunt\u0119s subjektas",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "Dokumento b\u016bsenos kodas. Klasifikatorius: /documentState"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Tipas. Klasifikatorius: /documentType"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Versijos identifikatorius"
+                }
+            },
+            "title": "CommonDocumentDto"
+        },
+        "CommonDocumentPageDto": {
+            "type": "object",
+            "properties": {
+                "documents": {
+                    "type": "array",
+                    "description": "Dokument\u0173 s\u0105ra\u0161as",
+                    "items": {
+                        "$ref": "#/definitions/CommonDocumentDto"
+                    }
+                },
+                "pageNumber": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "Puslapio numeris"
+                },
+                "pageSize": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "Puslapio dydis"
+                },
+                "totalElements": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "\u012era\u0161\u0173 kiekis"
+                },
+                "totalPages": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "Puslapi\u0173 skai\u010dius"
+                }
+            },
+            "title": "CommonDocumentPageDto"
+        },
+        "ConstructionDto": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "description": "Adresas",
+                    "$ref": "#/definitions/AddressDto"
+                },
+                "addressAdditionals": {
+                    "type": "array",
+                    "description": "Papildomi adresai",
+                    "items": {
+                        "$ref": "#/definitions/AddressDto"
+                    }
+                },
+                "addressNotLt": {
+                    "type": "string",
+                    "description": "Statinio adresas be lietuvi\u0161k\u0173 raid\u017ei\u0173"
+                },
+                "caseId": {
+                    "type": "string",
+                    "description": "Versijos identifikatorius"
+                },
+                "category": {
+                    "type": "string",
+                    "description": "Statinio kategorijos unikalus identifikatorius. Klasifikatorius: /constructionCategory"
+                },
+                "categoryFuture": {
+                    "type": "string",
+                    "description": "Statinio kategorijos unikalus identifikatorius (b\u016bsima kategorija). Klasifikatorius: /constructionCategory"
+                },
+                "culturalHeritageAreas": {
+                    "type": "array",
+                    "description": "Kult\u016bros paveldo vietov\u0117",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "culturalHeritageObjectSecurityZones": {
+                    "type": "array",
+                    "description": "Kult\u016bros paveldo objekto apsaugos zona",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "culturalHeritageObjectTerritories": {
+                    "type": "array",
+                    "description": "Kult\u016bros paveldo objekto teritorija",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "culturalHeritageObjects": {
+                    "type": "array",
+                    "description": "Kult\u016bros paveldo objektas",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "culturalHeritageSecurityZones": {
+                    "type": "array",
+                    "description": "Kult\u016bros paveldo vietov\u0117s apsaugos zona",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "demolitionDate": {
+                    "type": "string",
+                    "description": "Statinio nugriovimo termino pabaiga"
+                },
+                "demolitionEvent": {
+                    "type": "string",
+                    "description": "Statinio nugriovimo termino \u012fvykis"
+                },
+                "economyMethod": {
+                    "type": "boolean"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "indicatorValues": {
+                    "type": "array",
+                    "description": "Indikatoriai",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionIndicatorValueDto"
+                    }
+                },
+                "modernization": {
+                    "type": "boolean"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Statinio pavadinimas"
+                },
+                "nameFuture": {
+                    "type": "string",
+                    "description": "Statinio pavadinimas (b\u016bsimas pavadinimas)"
+                },
+                "noRegistrationDataReason": {
+                    "type": "string",
+                    "description": "Prie\u017eastis, kod\u0117l n\u0117ra statinio registracijos duomen\u0173"
+                },
+                "npsOptional": {
+                    "type": "boolean"
+                },
+                "otherPlaces": {
+                    "type": "array",
+                    "description": "Kitos teritorijos ir apsaugos zonos",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionOtherPlaceDto"
+                    }
+                },
+                "overPlotLimit": {
+                    "type": "boolean"
+                },
+                "participants": {
+                    "type": "array",
+                    "description": "Statybos dalyviai",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionParticipantDto"
+                    }
+                },
+                "plotRegistrations": {
+                    "type": "array",
+                    "description": "Registracijos duomenys",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionPlotRegistrationDto"
+                    }
+                },
+                "protectedTerritories": {
+                    "type": "array",
+                    "description": "Saugoma teritorija",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "purpose": {
+                    "type": "string",
+                    "description": "Statinio paskirties unikalus identifikatorius. Klasifikatorius: /constructionPurpose"
+                },
+                "purposeFuture": {
+                    "type": "string",
+                    "description": "Statinio paskirties unikalus identifikatorius (b\u016bsima paskirtis). Klasifikatorius: /constructionPurpose"
+                },
+                "registerNr": {
+                    "type": "string",
+                    "description": "Statinio registro numeris"
+                },
+                "registrationDate": {
+                    "type": "string",
+                    "description": "Statinio registravimo data"
+                },
+                "registrationType": {
+                    "type": "string",
+                    "description": "Registracijos tipas. Klasifikatorius: /registrationType"
+                },
+                "roomActions": {
+                    "type": "array",
+                    "description": "Veiksmai su patalpomis",
+                    "items": {
+                        "$ref": "#/definitions/RoomActionDto"
+                    }
+                },
+                "temporary": {
+                    "type": "boolean"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Statinio statybos r\u016b\u0161ies unikalus identifikatorius. Klasifikatorius: /constructionType"
+                },
+                "unauthorised": {
+                    "type": "boolean"
+                },
+                "uniqueNr": {
+                    "type": "string",
+                    "description": "Statinio unikalus numeris"
+                },
+                "vdi": {
+                    "description": "VDI",
+                    "$ref": "#/definitions/ConstructionVDIDto"
+                },
+                "year": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "Statinio statybos metai"
+                }
+            },
+            "title": "ConstructionDto"
+        },
+        "ConstructionIndicatorValueDto": {
+            "type": "object",
+            "properties": {
+                "actualValue": {
+                    "type": "string",
+                    "description": "Faktin\u0117 reik\u0161m\u0117 (pagal kadastro bylos duomenis)"
+                },
+                "actualValueClassif": {
+                    "type": "string",
+                    "description": "Faktin\u0117 reik\u0161m\u0117s tipas. Klasifikatorius: /valueType"
+                },
+                "constructionId": {
+                    "type": "string",
+                    "description": "Statinio identifikatorius"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "indicatorCode": {
+                    "type": "string",
+                    "description": "Rodiklio kodas. Klasifikatorius: /indicator"
+                },
+                "plannedValue": {
+                    "type": "string",
+                    "description": "Planuojama reik\u0161m\u0117 (pagal projekt\u0105)"
+                },
+                "plannedValueClassif": {
+                    "type": "string",
+                    "description": "Planuojama reik\u0161m\u0117s tipas. Klasifikatorius: /valueType"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Vienetai"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Versijos identifikatorius"
+                },
+                "valueType": {
+                    "type": "string",
+                    "description": "Tipas. Klasifikatorius: /valueType"
+                }
+            },
+            "title": "ConstructionIndicatorValueDto"
+        },
+        "ConstructionOtherPlaceDto": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "Apra\u0161ymas"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Tipas. Klasifikatorius: /constructionOtherPlaceType"
+                }
+            },
+            "title": "ConstructionOtherPlaceDto"
+        },
+        "ConstructionParticipantDto": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "description": "Adresas",
+                    "$ref": "#/definitions/AddressDto"
+                },
+                "certificate": {
+                    "description": "Sertifikatas",
+                    "$ref": "#/definitions/CertificateDto"
+                },
+                "certifiedPersonId": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Sertifikuotas asmuo"
+                },
+                "contactInfo": {
+                    "description": "Kontaktin\u0117 informacija",
+                    "$ref": "#/definitions/ContactInfoDto"
+                },
+                "hiringDate": {
+                    "type": "string",
+                    "description": "Pasamdymo data"
+                },
+                "hiringDocumentName": {
+                    "type": "string",
+                    "description": "Pasamdymo dokumento pavadinimas"
+                },
+                "hiringPeriod": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Pasamdymo periodas"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "participantType": {
+                    "type": "string",
+                    "description": "Asmens tipas. Klasifikatorius: /participantType"
+                },
+                "person": {
+                    "description": "Su statyba susij\u0119s asmuo",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "state": {
+                    "description": "B\u016bsena",
+                    "$ref": "#/definitions/ParticipantStateDto"
+                },
+                "titleNotLt": {
+                    "type": "string",
+                    "description": "Su statyba susij\u0119s asmens vardas, pavard\u0117/pavadinimas be lietuvi\u0161k\u0173 raid\u017ei\u0173"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Versijos identifikatorius"
+                }
+            },
+            "title": "ConstructionParticipantDto"
+        },
+        "ConstructionPlotRegistrationDto": {
+            "type": "object",
+            "properties": {
+                "cadastreNr": {
+                    "type": "string",
+                    "description": "Statinio \u017eem\u0117s sklypo kadastro numeris"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "noRegistrationInfo": {
+                    "type": "string",
+                    "description": "Registracijos nebuvimo informacija"
+                },
+                "noRegistrationType": {
+                    "type": "string",
+                    "description": "Registracijos nebuvimo prie\u017eastis. Klasifikatorius: /plotNoRegistrationType"
+                },
+                "registerNr": {
+                    "type": "string",
+                    "description": "Statinio \u017eem\u0117s sklypo registro numeris"
+                },
+                "registrationType": {
+                    "type": "string",
+                    "description": "Registracijos tipas. Klasifikatorius: /registrationType"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Versijos identifikatorius"
+                }
+            },
+            "title": "ConstructionPlotRegistrationDto"
+        },
+        "ConstructionVDIDto": {
+            "type": "object",
+            "properties": {
+                "contractorsNumber": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Statybviet\u0117je planuojamas dirban\u010di\u0173 rangov\u0173 skai\u010dius"
+                },
+                "employeesNum": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Statybviet\u0117je planuojamas did\u017eiausias darbuotoj\u0173 skai\u010dius"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "jobType": {
+                    "type": "string",
+                    "description": "Darb\u0173, vykdom\u0173 pagal 1 pried\u0105, r\u016b\u0161is. Klasifikatorius: /constructionJobType"
+                },
+                "persons": {
+                    "type": "array",
+                    "description": "Asmenys",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionVDIPersonDto"
+                    }
+                },
+                "plannedDuration": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Planuojama statybos darb\u0173 trukm\u0117 (d. d.)"
+                },
+                "startDate": {
+                    "type": "string",
+                    "description": "Planuojama statybos darb\u0173 prad\u017eia"
+                }
+            },
+            "title": "ConstructionVDIDto"
+        },
+        "ConstructionVDIPersonDto": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "Kodas"
+                },
+                "companyName": {
+                    "type": "string",
+                    "description": "Pavadinimas juridinio asmens"
+                },
+                "contactInfo": {
+                    "description": "Kontaktin\u0117 informacija",
+                    "$ref": "#/definitions/ContactInfoDto"
+                },
+                "firstName": {
+                    "type": "string",
+                    "description": "Vardas"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "lastName": {
+                    "type": "string",
+                    "description": "Pavard\u0117"
+                },
+                "personType": {
+                    "type": "string",
+                    "description": "Fizinis ar juridinis asmuo. Klasifikatorius: /personType"
+                }
+            },
+            "title": "ConstructionVDIPersonDto"
+        },
+        "ContactInfoDto": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string",
+                    "description": "El. pa\u0161to adresas"
+                },
+                "phone": {
+                    "type": "string",
+                    "description": "Telefono numeris"
+                },
+                "phoneOld": {
+                    "type": "string",
+                    "description": "Seno formato telefono numeris"
+                }
+            },
+            "title": "ContactInfoDto"
+        },
+        "NoteDto": {
+            "type": "object",
+            "properties": {
+                "actionName": {
+                    "type": "string",
+                    "description": "Atliktas veiksmas"
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Pastabos suk\u016brimo data"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "note": {
+                    "type": "string",
+                    "description": "Pastabos tekstas"
+                },
+                "number": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "Pastabos numeris"
+                },
+                "subject": {
+                    "type": "string",
+                    "description": "Pastab\u0105 suk\u016br\u0119s asmuo"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Tipas. Klasifikatorius: /noteType"
+                }
+            },
+            "title": "NoteDto"
+        },
+        "ParticipantStateDto": {
+            "type": "object",
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "description": "Data"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Tipas. Klasifikatorius: /participantStateType"
+                },
+                "userId": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "Naudotojo identifikatorius"
+                }
+            },
+            "title": "ParticipantStateDto"
+        },
+        "ProjectBuilderDto": {
+            "type": "object",
+            "properties": {
+                "builder": {
+                    "description": "Statinio projekto statytojo unikalus identifikatorius",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "builderNotLt": {
+                    "type": "string",
+                    "description": "Statinio projekto statytojo vardas, pavard\u0117 be lietuvi\u0161k\u0173 raid\u017ei\u0173"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                }
+            },
+            "title": "ProjectBuilderDto"
+        },
+        "ProjectDto": {
+            "type": "object",
+            "properties": {
+                "builders": {
+                    "type": "array",
+                    "description": "Statytojai",
+                    "items": {
+                        "$ref": "#/definitions/ProjectBuilderDto"
+                    }
+                },
+                "caseId": {
+                    "type": "string",
+                    "description": "Versijos identifikatorius"
+                },
+                "constructionStartDate": {
+                    "type": "string",
+                    "description": "Statybos prad\u017eios data"
+                },
+                "constructions": {
+                    "type": "array",
+                    "description": "Statiniai",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionDto"
+                    }
+                },
+                "gisObjectId": {
+                    "type": "string",
+                    "description": "GIS objekto ID"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "isBuilderUndetermined": {
+                    "type": "boolean",
+                    "description": "Projekto statytojas nenustatytas"
+                },
+                "largeProject": {
+                    "type": "boolean",
+                    "description": "Projektas \u012ftrauktas \u012f stambi\u0173 projekt\u0173 s\u0105ra\u0161\u0105 arba laisvosios ekonomin\u0117s zonos \u012fmon\u0117"
+                },
+                "linkToConsJournal": {
+                    "type": "string",
+                    "description": "Nuoroda \u012f el. statybos darb\u0173 \u017eurnal\u0105"
+                },
+                "linkToConsJournalLogin": {
+                    "type": "string",
+                    "description": "Prisijungimo informacija prie el. statybos darb\u0173 \u017eurnal\u0105"
+                },
+                "municipalities": {
+                    "type": "array",
+                    "description": "Savivaldyb\u0117s",
+                    "items": {
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Statinio projekto pavadinimas"
+                },
+                "noBasicInfo": {
+                    "type": "boolean",
+                    "description": "Ar yra projekto pagrindin\u0117 informacija"
+                },
+                "noBasicInfoReason": {
+                    "type": "string",
+                    "description": "Prie\u017eastis, kod\u0117l n\u0117ra projekto pagrindin\u0117s informacijos"
+                },
+                "owner": {
+                    "description": "Projekto savininkas",
+                    "$ref": "#/definitions/SubjectDto"
+                },
+                "participants": {
+                    "type": "array",
+                    "description": "Statybos dalyviai",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionParticipantDto"
+                    }
+                },
+                "questionConstructions": {
+                    "type": "array",
+                    "description": "Klausimyno statiniai",
+                    "items": {
+                        "$ref": "#/definitions/ConstructionDto"
+                    }
+                },
+                "registrationNr": {
+                    "type": "string",
+                    "description": "Statinio projekto registracijos numeris"
+                },
+                "secretInformation": {
+                    "type": "boolean",
+                    "description": "Ar projektas susij\u0119s su \u012fslaptinta informacija"
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Statinio projekto pavadinimas arba prie\u017eastis kod\u0117l n\u0117ra projekto pagrindin\u0117s informacijos"
+                },
+                "titleNotLt": {
+                    "type": "string",
+                    "description": "Statinio projekto pavadinimas arba prie\u017eastis kod\u0117l n\u0117ra projekto pagrindin\u0117s informacijos be lietuvi\u0161k\u0173 raid\u017ei\u0173"
+                },
+                "year": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "Statinio projekto parengimo metai"
+                }
+            },
+            "title": "ProjectDto"
+        },
+        "RoomActionDto": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "roomActionType": {
+                    "type": "string",
+                    "description": "Veiksmo su patalpomis tipo unikalus identifikatorius. Klasifikatorius /roomActionType"
+                },
+                "roomsAfterAction": {
+                    "type": "array",
+                    "description": "Patalpos po veiksmo",
+                    "items": {
+                        "$ref": "#/definitions/RoomDto"
+                    }
+                },
+                "roomsBeforeAction": {
+                    "type": "array",
+                    "description": "Patalpos prie\u0161 veiksm\u0105",
+                    "items": {
+                        "$ref": "#/definitions/RoomDto"
+                    }
+                }
+            },
+            "title": "RoomActionDto"
+        },
+        "RoomDto": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Patalp\u0173 pavadinimas"
+                },
+                "nameFuture": {
+                    "type": "string",
+                    "description": "Patalp\u0173 pavadinimas (b\u016bsimas pavadinimas)"
+                },
+                "noUniqueNr": {
+                    "type": "boolean",
+                    "description": "Ar turi unikal\u0173 numer\u012f"
+                },
+                "noUniqueNrReason": {
+                    "type": "string",
+                    "description": "Prie\u017eastis, kod\u0117l n\u0117ra unikalaus Nr."
+                },
+                "purpose": {
+                    "type": "string",
+                    "description": "Patalp\u0173 paskirties unikalus identifikatorius. Klasifikatorius /roomPurpose"
+                },
+                "purposeFuture": {
+                    "type": "string",
+                    "description": "Patalp\u0173 paskirties unikalus identifikatorius (b\u016bsima paskirtis). Klasifikatorius /roomPurpose"
+                },
+                "registerNr": {
+                    "type": "string",
+                    "description": "Patalp\u0173 registro numeris"
+                },
+                "uniqueNr": {
+                    "type": "string",
+                    "description": "Patalp\u0173 unikalus numeris"
+                }
+            },
+            "title": "RoomDto"
+        },
+        "SubjectDto": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "description": "Adresas"
+                },
+                "code": {
+                    "type": "string",
+                    "description": "Kodas"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "El. pa\u0161to adresas"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifikatorius"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Vardas"
+                },
+                "oldId": {
+                    "type": "string",
+                    "description": "Subjekto identifikatorius i\u0161, kurio buvo sukurtas subjektas "
+                },
+                "phone": {
+                    "type": "string",
+                    "description": "Telefono numeris"
+                },
+                "surname": {
+                    "type": "string",
+                    "description": "Pavard\u0117"
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Pavadinimas"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Tipas. Klasifikatorius: /subjectType"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Versijos identifikatorius"
+                }
+            },
+            "title": "SubjectDto"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "schemas/specifications.schema.json",
+  "organizations": [
+    {
+      "id": "am",
+      "label": "Aplinkos ministerija",
+      "specifications": [
+        {
+          "id": "infostatyba",
+          "label": "Infostatyba",
+          "url": "https://statau.eptptest.lt/eInfostatyba-ws-app/v2/api-docs?group=Universali_integracija"
+        }
+      ]
+    },
+    {
+      "id": "sam",
+      "label": "Sveikatos apsaugos ministerija",
+      "specifications": [
+        {
+          "id": "iprws",
+          "label": "Išankstinės pacientų registracijos sistema",
+          "url": "https://raw.githubusercontent.com/ivpk/public-api-catalog/main/specs/iprws.json"
+        }
+      ]
+    }
+  ]
+}
