@@ -874,7 +874,8 @@
                         "description": "Puslapio numeris",
                         "required": false,
                         "type": "integer",
-                        "format": "int32"
+                        "format": "int32",
+                        "x-example": 0
                     },
                     {
                         "name": "pageSize",
