@@ -1501,6 +1501,10 @@
                     "type": "string",
                     "description": "Identifikatorius"
                 },
+                "location": {
+                    "description": "Vietos koordinat\u0117s",
+                    "$ref": "#/definitions/LocationPointDto"
+                },
                 "noRegistrationInfo": {
                     "type": "string",
                     "description": "Registracijos nebuvimo informacija"
@@ -1615,6 +1619,22 @@
                 }
             },
             "title": "ContactInfoDto"
+        },
+        "LocationPointDto": {
+            "type": "object",
+            "properties": {
+                "x": {
+                    "type": "number",
+                    "format": "double",
+                    "description": "X koordinat\u0117"
+                },
+                "y": {
+                    "type": "number",
+                    "format": "double",
+                    "description": "Y koordinat\u0117"
+                }
+            },
+            "title": "LocationPointDto"
         },
         "NoteDto": {
             "type": "object",
